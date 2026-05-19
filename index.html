@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Akil Antony — Digital Marketing & Real Estate Professional</title>
+<meta name="description" content="Akil Antony — Multilingual Digital Marketing Specialist and Real Estate Executive. Fluent in 5 languages. UAE born. Google & HubSpot Certified."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #050810;
+  --surface: #0d1220;
+  --card: #111827;
+  --navy: #1a2744;
+  --gold: #D4A843;
+  --gold2: #F0C060;
+  --ivory: #F5F0E8;
+  --text: #E8E4DC;
+  --muted: #8892a4;
+  --border: rgba(212,168,67,0.2);
+  --glow: rgba(212,168,67,0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden; }
+body::before {
+  content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse 80% 50% at 20% 10%, rgba(26,39,68,0.6) 0%, transparent 60%), radial-gradient(ellipse 60% 40% at 80% 80%, rgba(212,168,67,0.05) 0%, transparent 50%);
+  pointer-events: none; z-index: 0;
+}
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(5,8,16,0.9); backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 60px;
+}
+.nav-brand { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--gold); text-decoration: none; letter-spacing: 1px; }
+.nav-links { display: flex; gap: 1.5rem; align-items: center; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 0.8rem; font-family: 'DM Mono', monospace; letter-spacing: 1px; transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-cta { background: var(--gold) !important; color: #000 !important; padding: 0.4rem 1rem !important; border-radius: 4px !important; font-weight: 600 !important; }
+.hero { min-height: 100vh; display: flex; align-items: center; padding: 100px 2rem 4rem; position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
+.hero-inner { max-width: 700px; }
+.hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+.hero-eyebrow::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--gold); opacity: 0.4; }
+.hero h1 { font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.5rem; color: var(--ivory); }
+.hero h1 span { color: var(--gold); }
+.hero-desc { font-size: 1.1rem; color: var(--muted); max-width: 540px; margin-bottom: 2.5rem; line-height: 1.8; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary { background: var(--gold); color: #000; padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+.btn-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+.btn-secondary { border: 1px solid var(--border); color: var(--text); padding: 0.75rem 1.75rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+.hero-stats { display: flex; gap: 2.5rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.stat-num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--gold); line-height: 1; }
+.stat-label { font-size: 0.75rem; color: var(--muted); font-family: 'DM Mono', monospace; letter-spacing: 1px; margin-top: 0.25rem; }
+section { padding: 5rem 2rem; position: relative; z-index: 1; }
+.container { max-width: 1100px; margin: 0 auto; }
+.section-label { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; margin-bottom: 0.75rem; }
+.section-title { font-family: 'Syne', sans-serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: var(--ivory); margin-bottom: 3rem; }
+.certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+.cert-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s; position: relative; overflow: hidden; }
+.cert-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold2)); }
+.cert-card:hover { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 8px 32px var(--glow); }
+.cert-card.cert-upcoming { opacity: 0.5; border-style: dashed; }
+.cert-card.cert-upcoming::before { background: linear-gradient(90deg, var(--muted), transparent); }
+.cert-issuer { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; margin-bottom: 0.5rem; }
+.cert-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 600; color: var(--ivory); margin-bottom: 0.5rem; line-height: 1.3; }
+.cert-date { font-size: 0.8rem; color: var(--muted); }
+.cert-icon { position: absolute; top: 1.25rem; right: 1.25rem; font-size: 1.2rem; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+.skill-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; text-align: center; transition: all 0.2s; }
+.skill-card:hover { border-color: var(--gold); background: var(--navy); }
+.skill-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.skill-name { font-size: 0.85rem; font-weight: 500; color: var(--text); }
+.exp-timeline { position: relative; }
+.exp-timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--gold), transparent); }
+.exp-item { padding-left: 2rem; margin-bottom: 2.5rem; position: relative; }
+.exp-item::before { content: ''; position: absolute; left: -4px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); border: 2px solid var(--bg); }
+.exp-period { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--gold); letter-spacing: 2px; margin-bottom: 0.4rem; }
+.exp-role { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--ivory); margin-bottom: 0.2rem; }
+.exp-company { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
+.exp-highlights { list-style: none; }
+.exp-highlights li { font-size: 0.85rem; color: var(--muted); padding: 0.2rem 0 0.2rem 1rem; position: relative; }
+.exp-highlights li::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
+.exp-big { display: inline-block; background: rgba(212,168,67,0.1); border: 1px solid var(--border); border-radius: 4px; padding: 0.2rem 0.6rem; color: var(--gold); font-size: 0.8rem; font-weight: 600; margin-top: 0.5rem; }
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+.lang-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; text-align: center; }
+.lang-flag { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.lang-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--ivory); }
+.lang-level { font-size: 0.75rem; color: var(--muted); font-family: 'DM Mono', monospace; margin-top: 0.25rem; }
+.contact-box { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 3rem; text-align: center; max-width: 600px; margin: 0 auto; }
+.contact-box h3 { font-family: 'Syne', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--ivory); margin-bottom: 1rem; }
+.contact-box p { color: var(--muted); margin-bottom: 2rem; }
+.contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.contact-link { display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.2rem; border: 1px solid var(--border); border-radius: 8px; color: var(--text); text-decoration: none; font-size: 0.85rem; transition: all 0.2s; }
+.contact-link:hover { border-color: var(--gold); color: var(--gold); }
+.contact-wa { background: #25D366; border-color: #25D366; color: #000 !important; font-weight: 600; }
+.contact-wa:hover { background: #20bc5a !important; color: #000 !important; }
+footer { border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--muted); font-size: 0.8rem; font-family: 'DM Mono', monospace; position: relative; z-index: 1; }
+footer strong { color: var(--gold); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.hero-inner > * { animation: fadeUp 0.6s ease both; }
+.hero-eyebrow { animation-delay: 0.1s; }
+.hero h1 { animation-delay: 0.2s; }
+.hero-desc { animation-delay: 0.3s; }
+.hero-actions { animation-delay: 0.4s; }
+.hero-stats { animation-delay: 0.5s; }
+@media(max-width:600px) {
+  nav { padding: 0 1rem; } .nav-links { gap: 0.75rem; }
+  .hero { padding: 80px 1.25rem 3rem; } section { padding: 3rem 1.25rem; }
+  .contact-box { padding: 2rem 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-brand">AKIL ANTONY</a>
+  <div class="nav-links">
+    <a href="#certifications">Certs</a>
+    <a href="#experience">Experience</a>
+    <a href="https://www.linkedin.com/in/akilantony" target="_blank">LinkedIn</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">UAE Born · Kerala Based · Available Worldwide</div>
+    <h1>Sales. Marketing.<br><span>5 Languages.</span><br>Let's Talk.</h1>
+    <p class="hero-desc">
+      Multilingual specialist fluent in 5 languages — English, Arabic, Hindi, Malayalam and Tamil.
+      Google & HubSpot certified. Real estate track record of AED 10M+ in sales.
+      Ready to bring global perspective to your team.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/919061259688" class="btn-primary">💬 WhatsApp Me</a>
+      <a href="https://akil-antony.github.io/Akil_CV_2026.pdf" class="btn-secondary" target="_blank">📄 Download CV</a>
+      <a href="mailto:akil.lida@gmail.com" class="btn-secondary">✉️ Email</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">AED 10M+</div><div class="stat-label">Sales Closed</div></div>
+      <div><div class="stat-num">5</div><div class="stat-label">Languages</div></div>
+      <div><div class="stat-num">3</div><div class="stat-label">Certifications</div></div>
+      <div><div class="stat-num">UAE</div><div class="stat-label">Born & Raised</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="certifications" style="background:var(--surface)">
+  <div class="container">
+    <div class="section-label">✦ Verified Credentials</div>
+    <div class="section-title">Certifications</div>
+    <div class="certs-grid">
+      <a href="https://skillshop.exceedlms.com/student/award/SA6rMxMNbUYSYj4n8F3k9LZA" target="_blank" class="cert-card" style="text-decoration:none;display:block;">
+        <div class="cert-icon">🎓</div>
+        <div class="cert-issuer">Google Skillshop — Verify ↗</div>
+        <div class="cert-name">Fundamentals of Digital Marketing</div>
+        <div class="cert-date">May 2026 · ID: 462852265</div>
+      </a>
+      <a href="https://app-na2.hubspot.com/academy/achievements/48mkcjfw/en/1/akil-antony/digital-marketing-certified" target="_blank" class="cert-card" style="text-decoration:none;display:block;">
+        <div class="cert-icon">🏆</div>
+        <div class="cert-issuer">HubSpot Academy — Verify ↗</div>
+        <div class="cert-name">Digital Marketing Certified</div>
+        <div class="cert-date">May 2026</div>
+      </a>
+      <a href="https://app-na2.hubspot.com/academy/achievements/k4sw94x8/en/1/akil-antony/inbound-marketing-certified" target="_blank" class="cert-card" style="text-decoration:none;display:block;">
+        <div class="cert-icon">🏆</div>
+        <div class="cert-issuer">HubSpot Academy — Verify ↗</div>
+        <div class="cert-name">Inbound Marketing Certified</div>
+        <div class="cert-date">May 2026</div>
+      </a>
+      <a href="https://akil-antony.github.io/03_Fundamentals_Digital_Marketing.pdf" target="_blank" class="cert-card" style="text-decoration:none;display:block;">
+        <div class="cert-icon">📄</div>
+        <div class="cert-issuer">PDF Certificate ↗</div>
+        <div class="cert-name">Google Digital Marketing Certificate</div>
+        <div class="cert-date">Download PDF</div>
+      </a>
+      <a href="https://akil-antony.github.io/04_HubSpot_Digital_Marketing.pdf" target="_blank" class="cert-card" style="text-decoration:none;display:block;">
+        <div class="cert-icon">📄</div>
+        <div class="cert-issuer">PDF Certificate ↗</div>
+        <div class="cert-name">HubSpot Digital Marketing Certificate</div>
+        <div class="cert-date">Download PDF</div>
+      </a>
+      <a href="https://akil-antony.github.io/01_Akil_10th_Certificate.pdf" target="_blank" class="cert-card cert-upcoming" style="text-decoration:none;display:block;">
+        <div class="cert-icon">🏫</div>
+        <div class="cert-issuer">Education ↗</div>
+        <div class="cert-name">10th Certificate (CBSE)</div>
+        <div class="cert-date">Mahatma Private English School</div>
+      </a>
+      <a href="https://akil-antony.github.io/02_Akil_12th_Certificate.pdf" target="_blank" class="cert-card cert-upcoming" style="text-decoration:none;display:block;">
+        <div class="cert-icon">🏫</div>
+        <div class="cert-issuer">Education ↗</div>
+        <div class="cert-name">12th Certificate (CBSE)</div>
+        <div class="cert-date">Sree Narayana Public School</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-label">✦ What I Bring</div>
+    <div class="section-title">Core Skills</div>
+    <div class="skills-grid">
+      <div class="skill-card"><div class="skill-icon">📱</div><div class="skill-name">Digital Marketing</div></div>
+      <div class="skill-card"><div class="skill-icon">🏠</div><div class="skill-name">Real Estate Sales</div></div>
+      <div class="skill-card"><div class="skill-icon">🤝</div><div class="skill-name">Client Relations</div></div>
+      <div class="skill-card"><div class="skill-icon">🎯</div><div class="skill-name">Lead Generation</div></div>
+      <div class="skill-card"><div class="skill-icon">📊</div><div class="skill-name">Social Media</div></div>
+      <div class="skill-card"><div class="skill-icon">✍️</div><div class="skill-name">Content Creation</div></div>
+      <div class="skill-card"><div class="skill-icon">🔍</div><div class="skill-name">SEO Fundamentals</div></div>
+      <div class="skill-card"><div class="skill-icon">📧</div><div class="skill-name">Email Marketing</div></div>
+      <div class="skill-card"><div class="skill-icon">💬</div><div class="skill-name">Negotiation</div></div>
+      <div class="skill-card"><div class="skill-icon">📈</div><div class="skill-name">CRM Management</div></div>
+      <div class="skill-card"><div class="skill-icon">🌍</div><div class="skill-name">Market Research</div></div>
+      <div class="skill-card"><div class="skill-icon">🗣️</div><div class="skill-name">Multilingual Comm.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="background:var(--surface)">
+  <div class="container">
+    <div class="section-label">✦ Career Journey</div>
+    <div class="section-title">Experience</div>
+    <div class="exp-timeline">
+
+      <div class="exp-item">
+        <div class="exp-period">MARCH 2026 — PRESENT</div>
+        <div class="exp-role">Marketing Specialist</div>
+        <div class="exp-company">Venad Global Consultancy · Kollam, Kerala</div>
+        <ul class="exp-highlights">
+          <li>Digital marketing strategy for immigration and educational consultancy</li>
+          <li>Social media management — Instagram, LinkedIn and WhatsApp</li>
+          <li>SEO-optimised content targeting Kerala expat communities</li>
+          <li>Google Business Profile and client communications management</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">NOV 2025 — FEB 2026 · UAE VISIT VISA</div>
+        <div class="exp-role">Real Estate Executive / Property Consultant</div>
+        <div class="exp-company">NESTO · Sharjah, UAE</div>
+        <ul class="exp-highlights">
+          <li>Buying, selling and leasing residential and commercial properties</li>
+          <li>Property viewings, negotiations and contract preparation</li>
+          <li>Lead generation through calls, emails and messaging platforms</li>
+        </ul>
+        <div class="exp-big">🏆 AED 10M+ Closed in 2 Months</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">NOV 2025 — FEB 2026 · UAE VISIT VISA</div>
+        <div class="exp-role">Receptionist & Sales Associate</div>
+        <div class="exp-company">Pan Emirates · Sharjah, UAE</div>
+        <ul class="exp-highlights">
+          <li>Customer service front desk operations</li>
+          <li>Sales support and multilingual client communications</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">MARCH 2025 — OCT 2025</div>
+        <div class="exp-role">Sales & Customer Service Associate</div>
+        <div class="exp-company">Pravasi Technical Services · Kollam, Kerala</div>
+        <ul class="exp-highlights">
+          <li>Sales of household appliances and air conditioning products</li>
+          <li>After-sales service coordination and customer relationship management</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="container">
+    <div class="section-label">✦ My Superpower</div>
+    <div class="section-title">5 Languages</div>
+    <div class="lang-grid">
+      <div class="lang-card"><div class="lang-flag">🇬🇧</div><div class="lang-name">English</div><div class="lang-level">Read · Write · Speak</div></div>
+      <div class="lang-card"><div class="lang-flag">🇦🇪</div><div class="lang-name">Arabic</div><div class="lang-level">Read · Write · Speak</div></div>
+      <div class="lang-card"><div class="lang-flag">🇮🇳</div><div class="lang-name">Hindi</div><div class="lang-level">Read · Write · Speak</div></div>
+      <div class="lang-card"><div class="lang-flag">🌴</div><div class="lang-name">Malayalam</div><div class="lang-level">Read · Write · Speak</div></div>
+      <div class="lang-card"><div class="lang-flag">🌺</div><div class="lang-name">Tamil</div><div class="lang-level">Speak</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--surface)">
+  <div class="container">
+    <div class="contact-box">
+      <h3>Let's Connect</h3>
+      <p>Looking for a multilingual marketing or real estate professional? I'm available immediately and open to relocation across UAE and GCC.</p>
+      <div class="contact-links">
+        <a href="https://wa.me/919061259688" class="contact-link contact-wa">💬 WhatsApp</a>
+        <a href="mailto:akil.lida@gmail.com" class="contact-link">✉️ Email</a>
+        <a href="tel:+919061259688" class="contact-link">📞 Call</a>
+        <a href="https://www.linkedin.com/in/akilantony" class="contact-link" target="_blank">💼 LinkedIn</a>
+        <a href="https://akil-antony.github.io/Akil_CV_2026.pdf" class="contact-link" target="_blank">📄 Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong>Akil Antony</strong> · Kollam, Kerala · UAE Born · <a href="https://akil-antony.github.io/" style="color:var(--gold)">akil-antony.github.io</a></p>
+</footer>
+
+</body>
+</html>
